@@ -5,9 +5,14 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
+/web/libraries/
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
+
+# Ingore files that are only for the current local environment
+web/sites/*/local.settings.php
+web/sites/*/local.services.yml
 
 # Ignore SimpleTest multi-site environment.
 web/sites/simpletest

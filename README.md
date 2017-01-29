@@ -3,11 +3,7 @@
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=7.x)](https://travis-ci.org/drupal-composer/drupal-project)
 
 This project template should provide a kickstart for managing your site 
-dependencies with [Composer](https://getcomposer.org/).
-
-If you want to know, how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+dependencies with [Composer](https://getcomposer.org/). It is based on the [original Drupal Composer Template](https://github.com/drupal-composer/drupal-project), but includes everything necessary to run on amazee.io (either the local development environment or on amazee.io servers.)
 
 ## Usage
 
@@ -19,8 +15,10 @@ You might need to replace `composer` with `php composer.phar` (or similar) for y
 After that you can create the project:
 
 ```
-composer create-project drupal-composer/drupal-project:7.x-dev some-dir --stability dev --no-interaction
+composer create-project amazeeio/drupal-project:7.x-dev some-dir --stability dev --no-interaction
 ```
+
+Now edit `.amazeeio.yml` and `docker-compose.yml` based on your needs.
 
 With `composer require ...` you can download new dependencies to your installation.
 

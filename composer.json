@@ -1,6 +1,6 @@
 {
-  "name": "drupal-composer/drupal-project",
-  "description": "Composer template for Drupal projects",
+  "name": "amazeeio/drupal-project",
+  "description": "Composer template for Drupal projects hostd on amazee.io",
   "repositories": {
     "drupal": {
       "type": "composer",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "post-create-project-cmd": [
-      "rm README.md LICENSE .travis.yml phpunit.xml.dist"
+      "rm README.md LICENSE"
     ]
   },
   "config": {

@@ -4,8 +4,7 @@ vendor
 !web/sites
 web/sites/*
 !web/sites/default
-web/sites/default/*
-!web/sites/default/settings.php
+web/sites/default/local.settings.php
 web/sites/default/files/*
 !web/sites/default/files/.gitkeep
 
@@ -17,5 +16,3 @@ web/sites/all/modules/*
 !web/sites/all/themes
 web/sites/all/themes/*
 !web/sites/all/themes/custom
-
-composer.lock # remove this in real projects!

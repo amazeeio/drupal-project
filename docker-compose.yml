@@ -1,16 +1,16 @@
-# Create here the Drupal site you would like
+# Create the Drupal site you would like here
 version: '2'
 services:
   drupal:
-    # Choose your URL and hostname for this Docker Container
+    # Choose the URL and hostname for this Docker Container
     # NEEDS to end with '.docker.amazee.io' !
     # DO NOT remove the '&hostname'
     hostname: &hostname changeme.docker.amazee.io
 
     environment:
       # If you use https://github.com/drupal-composer/drupal-project or something similar,
-      # the Drupal root is not inside the Repository root, you can define in which folder
-      # the the Drupal Root lives
+      # the Drupal root is not inside the repository root. Here you can define in which folder
+      # the Drupal root lives
       WEBROOT: web
 
       # If you would like to use blackfire.io, uncomment and add your server credentials:
@@ -20,12 +20,12 @@ services:
       # If you want to use stage_file_proxy, uncomment following line and add the production url of your website:
       #AMAZEEIO_PRODUCTION_URL: 'http://example.com'
 
-      # APC Support is by default enabled, but in some cases it can make issues, change to 0 to disable:
+      # APC Support is by enabled by default, but in some cases it can cause issues, change to 0 to disable:
       APC: 1
 
 
 ################################################
-### Do not change anything below here, unless you know what you do
+### Do not change anything below here, unless you know what know what you are doing.
       VIRTUAL_HOST: *hostname
     image: amazeeio/drupal:php70-basic
     volumes:

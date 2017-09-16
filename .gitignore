@@ -10,7 +10,7 @@
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
-# Ingore files that are only for the current local environment
+# Ignore files that are only for the current local environment
 web/sites/*/local.settings.php
 web/sites/*/local.services.yml
 
